@@ -1,0 +1,90 @@
+* {
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+div {
+    border: 1px solid brown;
+}
+
+.header, .hero {
+    display: flex;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.header-logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-links {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero {
+    flex-direction: row;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.hero-main {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button#hero-button {
+    background-color: #3882f6;
+    color:#f9faf8
+}
+
+.img-placeholder {
+    width: 600px;
+    height: 250px;
+    background-color: gray;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Notes from image so I can close it:
+
+font = roboto
+dark bg color = 1f2937
+hero main txt = 48px f9faf8 weight 900
+hero secondary, header link = 18px e5e7eb
+header logo = 24px, f9faf8
+buttom color, cta bg color = 3882f6
+information header text = 36px 1f2937, wight 900
+quote section bg = e5e7eb
+quote text = 36px light italic 1f2937
+
+*/
