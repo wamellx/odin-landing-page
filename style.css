@@ -1,5 +1,11 @@
+/* Parent Properties */
+
 * {
     font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid brown; */
 }
 
 body {
@@ -7,26 +13,27 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+body > * {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-div, ul {
-    border: 1px solid brown;
-}
+/* Header Section */
 
-.header, .hero {
+.header {
     display: flex;
     background-color: #1f2937;
     color: #f9faf8;
+    justify-content: space-between;  
+    align-items: center;
 }
 
-.header {
-   justify-content: space-around;
-   align-items: center;
+.header > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .header-logo-text {
@@ -43,16 +50,32 @@ div, ul {
     padding: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Hero Section */
+
 .hero {
+    background-color: #1f2937;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    justify-content: left;
+    flex-shrink: 1;
+    width: 50%;
+    gap: 0.5rem;
 }
 
 .hero-main {
@@ -70,12 +93,16 @@ button#hero-button {
     background-color: #3882f6;
     color:#f9faf8;
     width: 125px;
-    height: 40px;
+    height: 35px;
     font-size: 18px;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 8px;
+    margin-top: .5rem;
 }
 
 .img-placeholder {
-    width: 600px;
+    width: 50%;
     height: 250px;
     background-color: gray;
     color: #e5e7eb;
@@ -84,19 +111,112 @@ button#hero-button {
     justify-content: center;
 }
 
+/* Mid Section */
 
+.mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    gap: 40px;
+    padding: 5% 0%;
+}
 
+.mid-header {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    text-align: center;
+}
 
-/* Notes from image so I can close it:
+.mid-items {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
 
-font = roboto
-dark bg color = 1f2937
-hero main txt = 48px f9faf8 weight 900
-hero secondary, header link = 18px e5e7eb
-header logo = 24px, f9faf8
-buttom color, cta bg color = 3882f6
-information header text = 36px 1f2937, wight 900
-quote section bg = e5e7eb
-quote text = 36px light italic 1f2937
+.info-image {
+    width: 175px;
+    height: 175px;
+    border: 5px solid #3882f6;
+    border-radius: 10%;
+}
 
-*/
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 175px;
+    gap: 10px;
+}
+
+.info-text {
+    text-align: center;
+}
+
+/* Testimonial Section */
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #e5e7eb;
+    padding: 5% 20%;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+   }
+
+.testimonial-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.testimonial-attr {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* CTA Section */
+
+.cta {
+    display: flex;
+    background-color: #3882f6;
+    max-width: 75%;
+    min-width: 50%;
+    height: 7rem;
+    margin: 4rem auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    border-radius: 8px;
+}
+
+.cta-text {
+    color: white; 
+}
+
+.cta-button {
+    background-color: #3882f6;
+    color:#f9faf8;
+    width: 125px;
+    height: 40px;
+    font-size: 18px;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 8px;
+}
+
+/* Footer Section */
+
+.footer {
+    display: flex;
+    background-color: #1f2937;
+    color: #f9faf8; 
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
